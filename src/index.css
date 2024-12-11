@@ -1,0 +1,228 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa; 
+  color: #202124;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+
+header input {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 1.2em;
+  border-radius: 20px; 
+  background: #f8d0f7; 
+  border: 2px solid #f1a1d4;
+  color: #202124;
+  transition: all 0.3s ease; 
+}
+
+header input:focus {
+  border-color: #f27dc2; 
+  box-shadow: 0 0 8px rgba(242, 125, 194, 0.6); 
+  outline: none;
+}
+
+header button {
+  padding: 14px 20px;
+  font-size: 1.2em;
+  background: #f27dc2; 
+  color: white;
+  border-radius: 20px; 
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+header button:hover {
+  background: #e64d8f; 
+  transform: scale(1.05); 
+}
+
+header button:active {
+  background: #d4437b; 
+}
+
+.main {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto; 
+  padding: 10px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: #fce4f5; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todoItem:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.todoItem p {
+  flex: 1;
+  font-size: 1em;
+  color: #202124;
+}
+
+.actionsContainer button {
+  background: #f8bbd0;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.actionsContainer button i {
+  color: #d81b60; 
+  font-size: 1.3em; 
+  transition: color 0.3s ease; 
+}
+
+.actionsContainer button:hover {
+  background: #f48fb1; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.actionsContainer button:hover i {
+  color: #ffffff; 
+}
+
+@media (max-height: 800px) {
+  .main {
+    max-height: 60vh;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #eff6ff); 
+  position: relative;
+  overflow: hidden; 
+}
+
+
+.background-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.shape1 {
+  width: 150px;
+  height: 150px;
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.shape2 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+.shape3 {
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 30%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.sticker {
+  position: absolute;
+  width: 80px;
+  height: auto;
+}
+
+.sticker1 {
+  top: 5%;
+  left: 5%;
+}
+
+.sticker2 {
+  bottom: 10%;
+  right: 10%;
+}
+
+.sticker3 {
+  top: 20%;
+  right: 5%;
+  width: 90px;
+}
+
+.sticker4 {
+  bottom: 20%;
+  left: 10%;
+  width: 100px;
+}
+
+.sticker5 {
+  top: 40%; 
+  left: 30%; 
+  width: 90px; 
+  transform: translate(-50%, -50%); 
+}
+
+
